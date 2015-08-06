@@ -5,10 +5,27 @@
     <title>Tower Defense</title>
   </head>
   <body>
-
+    <canvas></canvas>
 
     <script type="application/javascript" src="lib/map.js"></script>
     <script type="text/javascript" src="lib/tile.js"></script>
     <script type="text/javascript" src="lib/tower.js"></script>
+    <script type="text/javascript" src="lib/game.js"></script>
+    <script type="text/javascript" src="lib/gameView.js"></script>
+
+
+    <script type="application/javascript">
+     (function () {
+       var canvasEl = document.getElementsByTagName("canvas")[0];
+
+       canvasEl.width = 600;
+       canvasEl.height = 600;
+
+       var ctx = canvasEl.getContext("2d");
+       var game = new towerDefense.Game();
+       new towerDefense.GameView(game, ctx).start();
+     })();
+   </script>
+
   </body>
 </html>
