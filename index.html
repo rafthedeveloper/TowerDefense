@@ -18,8 +18,8 @@
      (function () {
        var canvasEl = document.getElementsByTagName("canvas")[0];
 
-       canvasEl.width = 600;
-       canvasEl.height = 600;
+       canvasEl.width = towerDefense.Game.DIM_X;
+       canvasEl.height = towerDefense.Game.DIM_Y;
 
        var ctx = canvasEl.getContext("2d");
        var game = new towerDefense.Game();
