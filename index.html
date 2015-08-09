@@ -24,6 +24,8 @@
        canvasEl.height = towerDefense.Game.DIM_Y;
 
        var ctx = canvasEl.getContext("2d");
+       this.towerDefense.projectiles = [];
+
        var game = this.towerDefense.game = new towerDefense.Game();
        new towerDefense.GameView(game, ctx).start();
      })();
