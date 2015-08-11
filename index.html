@@ -3,15 +3,91 @@
   <head>
     <meta charset="utf-8">
     <title>Tower Defense</title>
+    <link href='http://fonts.googleapis.com/css?family=Atomic+Age' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Mystery+Quest' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <canvas id="canvas"></canvas>
+    <section class="tower-defense group">
+      <canvas id="canvas"></canvas>
+      <section class="game-ui-container">
+      <section class="game-ui">
+        <h1>Tower Defense</h1>
+        <ul class="game-ui-list">
+          <li>Wave: <span id="waves"></span></li>
+          <li>Gold: <span id="gold"></span></li>
+          <li>Lives left: <span id="lives"></span></li>
+        </ul>
 
+        <figure class="lives">
+          <img src="assets/images/end.png" />
+          <ul class="lives-list group" id="lives-list">
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+            <li><img src="assets/images/life.png"></li>
+
+          </ul>
+        </figure>
+      </section>
+      </section>
+    </section>
     <script type="application/javascript" src="lib/map.js"></script>
     <script type="application/javascript" src="lib/tile.js"></script>
     <script type="application/javascript" src="lib/tower.js"></script>
     <script type="application/javascript" src="lib/game.js"></script>
     <script type="application/javascript" src="lib/gameView.js"></script>
+    <script type="application/javascript" src="lib/wave.js"></script>
     <script type="application/javascript" src="lib/enemy.js"></script>
     <script type="application/javascript" src="lib/tower.js"></script>
     <script type="application/javascript" src="lib/lazer.js"></script>
