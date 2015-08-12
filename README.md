@@ -1,3 +1,3 @@
-## SpaceWorms TD 
+# SpaceWorms TD 
 
-#Made by: Sam Hone-Studer, Rafael Maldonado and Dan Reich
+###Made by: Sam Hone-Studer, Rafael Maldonado and Dan Reich
