@@ -9,7 +9,7 @@ Yadda, yadda.
 
 
 ######How it's made:
-This game is made using vanilla JavaScript in using HTML, CSS and Canvas. 
+This game is made using vanilla JavaScript using HTML, CSS and Canvas. 
 
 
 ######Want to contribute?
