@@ -7,8 +7,22 @@
   </head>
   <body>
     <section class="tower-defense group">
+      <section class="td-splash" id="td-splash">
+        <h1>SpaceWorms TD</h1>
+        <h3>Instructions:<h3>
+
+          <ul class="instructions-list">
+            <li>The space worms are coming!</li>
+            <li>Select a tile and click on it to build towers on it.</li>
+            <li>Don't let the enemies reach the end of the path!</li>
+            <li>If your lives run out, you lose!</li>
+
+          </ul>
+        <button id="start-game">play</button>
+      </section>
       <canvas id="canvas"></canvas>
-      <section class="game-ui-container">
+
+      <section id="game-ui" class="game-ui-container">
         <section class="game-ui">
           <h1>SpaceWorms TD</h1>
           <ul class="game-ui-list">
@@ -20,6 +34,22 @@
 
         </section>
       </section>
+
+      <section class="modal-container" id="paused">
+        <section class="modal">
+          <h2>Game Paused</h2>
+          <button id="unpause-game">Unpause</button>
+        </section>
+      </section>
+
+      <section class="modal-container" id="game-over">
+        <section class="modal">
+          <h2>Defeat</h2>
+          <button id="restart-game">Restart</button>
+        </section>
+      </section>
+
+
     </section>
     <script type="application/javascript" src="lib/map.js"></script>
     <script type="application/javascript" src="lib/tile.js"></script>
@@ -33,18 +63,21 @@
     <script type="application/javascript" src="lib/bullet.js"></script>
 
     <script type="application/javascript">
-     (function () {
-       var canvasEl = document.getElementsByTagName("canvas")[0];
+    document.getElementById("start-game").addEventListener("click", function(){
+      document.getElementById("td-splash").style.display = 'none';
+      document.getElementById("game-ui").style.display = 'block';
+      var canvasEl = document.getElementsByTagName("canvas")[0];
 
-       canvasEl.width = towerDefense.Game.DIM_X;
-       canvasEl.height = towerDefense.Game.DIM_Y;
+         canvasEl.width = towerDefense.Game.DIM_X;
+         canvasEl.height = towerDefense.Game.DIM_Y;
 
-       var ctx = canvasEl.getContext("2d");
-       this.towerDefense.projectiles = [];
+         var ctx = canvasEl.getContext("2d");
+         this.towerDefense.projectiles = [];
 
-       var game = this.towerDefense.game = new towerDefense.Game();
-       new towerDefense.GameView(game, ctx).start();
-     })();
+         var game = this.towerDefense.game = new towerDefense.Game();
+         new towerDefense.GameView(game, ctx).start();
+    }.bind(this))
+
    </script>
 
   </body>

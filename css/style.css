@@ -22,6 +22,7 @@ ul{
 
 body{
   font-family: 'space_ageregular';
+  box-sizing:border-box;
 }
 
 *{
@@ -31,7 +32,7 @@ body{
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  box-sizing:border-box;
+
 }
 
 .group:after{
@@ -42,9 +43,31 @@ body{
 
 .tower-defense{
   width:900px;
+  position:relative;
 }
 canvas{
   float:left;
+}
+
+.modal-container{
+  display:none;
+  width:900px;
+  height:600px;
+  position:absolute;
+  background: rgba(0,0,0,.75);
+}
+
+.modal{
+  text-align:center;
+  color:#fff;
+  position:absolute;
+  background: #000;
+  width:250px;
+  height:150px;
+  padding-top:20px;
+  margin-top:225px;
+  margin-left:175px;
+
 }
 
 @font-face {
@@ -60,8 +83,41 @@ canvas{
 
 }
 
-.game-ui-container{
+.td-splash{
+  width:900px;
+  height:600px;
+  background:#000;
+  color:#fff;
+  padding-top:40px;
+}
+
+.td-splash h1{
+  font-size:32px;
+  text-align:center;
+
+}
+
+button{
+  font-size:18px;
+  border:2px solid #fff;
+  padding:20px;
+  cursor:pointer;
+  width:200px;
   display:block;
+  text-align:center;
+  margin:0 auto;
+  margin-top:40px;
+    color:#fff;
+}
+
+button:hover{
+  background: rgba(124, 252, 0, 1);
+  color:#000;
+  border-color: rgba(124, 252, 0, 1);
+}
+
+.game-ui-container{
+  display:none;
   content: "";
   width:300px;
   height:600px;
