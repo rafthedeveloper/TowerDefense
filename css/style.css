@@ -70,6 +70,23 @@ canvas{
 
 }
 
+.waves-modal{
+  display:none;
+  text-align:center;
+  color:#fff;
+  position:absolute;
+  background: #000;
+  width:250px;
+  height:60px;
+  padding-top:20px;
+  margin-top:20px;
+  margin-left:175px;
+}
+
+.wave-number{
+  display:none;
+}
+
 @font-face {
     font-family: 'space_ageregular';
     src: url('space_age-webfont.eot');
