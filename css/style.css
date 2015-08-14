@@ -235,9 +235,24 @@ button:hover{
   top: 0;
 }
 
+#more-resources {
+  position: relative;
+  top: 250px;
+  text-align: center;
+  padding: 10px;
+  color: #f00;
+  opacity: 0;
+
+  transition: opacity 500ms;
+}
+
 
 /* utils */
 
 #tower-options.active {
   display: block;
+}
+
+#more-resources.opaque {
+  opacity: 1;
 }
