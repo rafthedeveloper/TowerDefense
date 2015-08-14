@@ -194,3 +194,11 @@ button:hover{
   margin-top:5px;
   margin-left:5px;
 }
+
+
+/* tower options */
+
+.tower-options {
+  position: absolute;
+  bottom: 0;
+}
