@@ -198,7 +198,46 @@ button:hover{
 
 /* tower options */
 
-.tower-options {
+#tower-options {
   position: absolute;
   bottom: 0;
+  width: 100%;
+  display: none;
+}
+
+#tower-options > figure {
+  padding: 20px;
+  position: relative;
+  border-top: 2px solid #f00;
+  border-left: 2px solid #f00;
+}
+
+#tower-options > figure:hover {
+  background: #f00;
+  cursor: pointer;
+}
+
+#tower-options > figure > img {
+  width: 50px;
+  height: 50px;
+}
+
+#tower-options > figure > p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 90px;
+}
+
+.gold-cost {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+/* utils */
+
+#tower-options.active {
+  display: block;
 }
